@@ -73,7 +73,7 @@
     <string name="pref_version_title">Версия сборки</string>
     <string name="pref_version_summary">1.0</string>
     <string name="pref_developer_title">Разработчик</string>
-    <string name="pref_developer_summary">FandroidApps</string>
+    <string name="pref_developer_summary">Igor</string>
     <string name="pref_share_title">Поделитесь приложением</string>
     <string name="pref_share_summary">Расскажите друзьям об этом приложении</string>
     <string name="pref_rate_review_title">Поставьте оценку</string>
