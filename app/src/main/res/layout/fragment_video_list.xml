@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lytRetry"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAlert"
+            android:text="@string/no_internet_connection"
+            android:textSize="@dimen/title"
+            android:textColor="@color/primary_text" />
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raisedRetry"
+            android:background="@color/accent_color"
+            android:text="@string/retry"
+            android:theme="@style/RaisedButtonStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNoResult"
+        android:text="@string/no_result"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/text_and_icon_color"
+        android:textSize="@dimen/subhead"/>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:layout_width="@dimen/circleprogressbar_width"
+        android:layout_height="@dimen/circleprogressbar_height"
+        android:id="@+id/prgLoading"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:mlpb_enable_circle_background="true"/>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ultimate_recycler_view">
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+</RelativeLayout>
