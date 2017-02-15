@@ -3,12 +3,14 @@ package com.igordubrovin.youtubechannel.activities;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceActivity;
+
+import com.lb.material_preferences_library.PreferenceActivity;
+import com.lb.material_preferences_library.custom_preferences.Preference;
 
 import com.igordubrovin.youtubechannel.R;
 
-public class ActivityAbout extends PreferenceActivity implements Preference.OnPreferenceClickListener{
+public class ActivityAbout extends PreferenceActivity
+        implements Preference.OnPreferenceClickListener {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState)
@@ -24,7 +26,7 @@ public class ActivityAbout extends PreferenceActivity implements Preference.OnPr
         prefRateReviewKey.setOnPreferenceClickListener(this);
     }
 
-
+    @Override
     protected int getPreferencesXmlId()
     {
         return R.xml.pref_about;

@@ -1,9 +1,10 @@
 package com.igordubrovin.youtubechannel.fragments;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,10 +20,6 @@ import com.android.volley.NoConnectionError;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.igordubrovin.youtubechannel.R;
-import com.igordubrovin.youtubechannel.adapter.AdapterList;
-import com.igordubrovin.youtubechannel.utils.MySingleton;
-import com.igordubrovin.youtubechannel.utils.Utils;
 import com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar;
 import com.marshalchen.ultimaterecyclerview.ItemTouchListenerAdapter;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerView;
@@ -33,6 +30,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.igordubrovin.youtubechannel.R;
+import com.igordubrovin.youtubechannel.adapter.AdapterList;
+import com.igordubrovin.youtubechannel.utils.MySingleton;
+import com.igordubrovin.youtubechannel.utils.Utils;
 
 /**
  * Created by Игорь on 15.02.2017.
@@ -162,7 +164,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
 
 
     @Override
-    public void onAttach(Activity activity) {
+    public void onAttach(Context activity) {
         super.onAttach(activity);
 
 
